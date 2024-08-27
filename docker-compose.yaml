@@ -23,6 +23,8 @@ x-airflow-common:
     - ./src/airflow-docker/logs:/opt/airflow/logs
     - ./src/airflow-docker/config:/opt/airflow/config
     - ./src/airflow-docker/plugins:/opt/airflow/plugins
+    - ./src/airflow-docker/jars:/opt/airflow/jars
+    
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
