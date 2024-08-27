@@ -1,0 +1,7 @@
+findspark               # Biblioteca para encontrar e inicializar o Spark em Python.
+pandas                  # Biblioteca para manipulação e análise de dados em Python.
+pyspark                 # Interface do Python para Apache Spark, usada para processamento de dados em larga escala.
+yahoofinance            # Biblioteca para acessar dados financeiros do Yahoo Finance.
+yahooquery              # Biblioteca para acessar dados financeiros do Yahoo Finance e realizar consultas mais complexas.
+yfinance                # Biblioteca para acessar dados financeiros históricos e de mercado do Yahoo Finance.
+psycopg2-binary         # Adaptador para conectar e interagir com bancos de dados PostgreSQL a partir de Python.
