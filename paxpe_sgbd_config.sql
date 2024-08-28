@@ -1,4 +1,14 @@
-create database PAXPEdb;
+-- Criação do banco de dados
+DROP DATABASE IF EXISTS paxpedb;
+CREATE DATABASE paxpedb;
+
+-- Conecte-se ao banco de dados criado
+\c paxpedb
+
+-- Criação dos esquemas
+CREATE SCHEMA IF NOT EXISTS paxpe;
+CREATE SCHEMA IF NOT EXISTS paxpestg;
+
 
 -- schema
 CREATE SCHEMA IF NOT EXISTS PAXPE;
@@ -184,20 +194,20 @@ COMMENT ON COLUMN paxpe.dividendos.dthr_igtao IS 'Data e hora da criação do re
 -- Script para criar a tabela 'valuation' no esquema 'paxpe'
 CREATE TABLE paxpe.valuation (
     ticker VARCHAR(20) NOT NULL, 
-    pe_forward DOUBLE PRECISION, 
-    pe_trailing DOUBLE PRECISION, 
-    booking_price DOUBLE PRECISION, 
-    peg_ratio DOUBLE PRECISION, 
+    pl_futuro DOUBLE PRECISION, 
+    pl_retroativo DOUBLE PRECISION, 
+    preco_booking DOUBLE PRECISION, 
+    indice_preco_lucro_cresc DOUBLE PRECISION, 
     dt_ptcao VARCHAR(20) NOT NULL, 
     dthr_igtao TIMESTAMP NOT NULL
 );
 
 -- Comentários em português
 COMMENT ON COLUMN paxpe.valuation.ticker IS 'Símbolo da ação';
-COMMENT ON COLUMN paxpe.valuation.pe_forward IS 'P/E Forward';
-COMMENT ON COLUMN paxpe.valuation.pe_trailing IS 'P/E Trailing';
-COMMENT ON COLUMN paxpe.valuation.booking_price IS 'Preço de booking';
-COMMENT ON COLUMN paxpe.valuation.peg_ratio IS 'Peg Ratio';
+COMMENT ON COLUMN paxpe.valuation.pl_futuro IS 'P/E Forward';
+COMMENT ON COLUMN paxpe.valuation.pl_retroativo IS 'P/E Trailing';
+COMMENT ON COLUMN paxpe.valuation.preco_booking IS 'Preço de booking';
+COMMENT ON COLUMN paxpe.valuation.indice_preco_lucro_cresc IS 'Peg Ratio';
 COMMENT ON COLUMN paxpe.valuation.dt_ptcao IS 'Data no formato ''dd/mm/aaaa''';
 COMMENT ON COLUMN paxpe.valuation.dthr_igtao IS 'Data e hora da criação do registro';
 
@@ -383,20 +393,20 @@ COMMENT ON COLUMN paxpestg.temp_dividendos.dthr_igtao IS 'Data e hora da criaç�
 -- Script para criar a tabela 'temp_valuation' no esquema 'paxpestg'
 CREATE TABLE paxpestg.temp_valuation (
     ticker VARCHAR(20) NOT NULL, 
-    pe_forward DOUBLE PRECISION, 
-    pe_trailing DOUBLE PRECISION, 
-    booking_price DOUBLE PRECISION, 
-    peg_ratio DOUBLE PRECISION, 
+    pl_futuro DOUBLE PRECISION, 
+    pl_retroativo DOUBLE PRECISION, 
+    preco_booking DOUBLE PRECISION, 
+    indice_preco_lucro_cresc DOUBLE PRECISION, 
     dt_ptcao VARCHAR(20) NOT NULL, 
     dthr_igtao TIMESTAMP NOT NULL
 );
 
 -- Comentários em português
 COMMENT ON COLUMN paxpestg.temp_valuation.ticker IS 'Símbolo da ação';
-COMMENT ON COLUMN paxpestg.temp_valuation.pe_forward IS 'P/E Forward';
-COMMENT ON COLUMN paxpestg.temp_valuation.pe_trailing IS 'P/E Trailing';
-COMMENT ON COLUMN paxpestg.temp_valuation.booking_price IS 'Preço de booking';
-COMMENT ON COLUMN paxpestg.temp_valuation.peg_ratio IS 'Peg Ratio';
+COMMENT ON COLUMN paxpestg.temp_valuation.pl_futuro IS 'P/E Forward';
+COMMENT ON COLUMN paxpestg.temp_valuation.pl_retroativo IS 'P/E Trailing';
+COMMENT ON COLUMN paxpestg.temp_valuation.preco_booking IS 'Preço de booking';
+COMMENT ON COLUMN paxpestg.temp_valuation.indice_preco_lucro_cresc IS 'Peg Ratio';
 COMMENT ON COLUMN paxpestg.temp_valuation.dt_ptcao IS 'Data no formato ''dd/mm/aaaa''';
 COMMENT ON COLUMN paxpestg.temp_valuation.dthr_igtao IS 'Data e hora da criação do registro';
 
