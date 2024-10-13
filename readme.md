@@ -49,7 +49,7 @@ O Docker Compose configura e inicia vários serviços. Aqui estão as instruçõ
 ### 4. Apache Spark
 
 - **Descrição**: Plataforma para processamento de dados distribuídos.
-- **URL de Acesso**: [http://localhost:4040](http://localhost:4040)
+- **URL de Acesso**: [http://localhost:8081](http://localhost:8081/)
 
 ## Comandos Úteis
 - **Iniciar Serviços**:
@@ -57,3 +57,5 @@ O Docker Compose configura e inicia vários serviços. Aqui estão as instruçõ
   docker-compose up --build
 docker-compose up -d 
    docker compose down #derruba o projeto
+
+visualização do starchema a ser gerado: PAXPE - [STARSCHEMA - dbdiagram](https://dbdiagram.io/d/PA-XPE-STARSCHEMA-670c19dc97a66db9a3d22dba)

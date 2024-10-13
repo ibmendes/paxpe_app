@@ -1,0 +1,78 @@
+// Esquema paxpe
+Table paxpe.retorno_mensal {
+  ticker varchar [pk]
+  data date
+  retorno decimal(10, 4)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table paxpe.captacao_mercado {
+  ticker varchar [pk]
+  captacao decimal(15, 2)
+  data date
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table paxpe.cadastro {
+  ticker varchar [pk]
+  nome_empresa varchar
+  setor varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table paxpe.financas {
+  ticker varchar [pk]
+  receita decimal(15, 2)
+  lucro_liquido decimal(15, 2)
+  margem_liquida decimal(5, 2)
+  data date
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table paxpe.mercado {
+  ticker varchar [pk]
+  preco decimal(10, 2)
+  volume bigint
+  data date
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table paxpe.dividendos {
+  ticker varchar [pk]
+  valor_dividendo decimal(10, 2)
+  data date
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table paxpe.valuation {
+  ticker varchar [pk]
+  p_l decimal(5, 2)
+  p_vp decimal(5, 2)
+  ev_ebitda decimal(5, 2)
+  data date
+  created_at timestamp
+  updated_at timestamp
+}
+
+// Esquema paxpestg
+Table paxpestg.temp_retorno_mensal {
+  ticker varchar
+  data date
+  retorno decimal(10, 4)
+  created_at timestamp
+  updated_at timestamp
+}
+
+// Relacionamentos
+Ref: paxpe.retorno_mensal.ticker > paxpe.cadastro.ticker
+Ref: paxpe.captacao_mercado.ticker > paxpe.cadastro.ticker
+Ref: paxpe.financas.ticker > paxpe.cadastro.ticker
+Ref: paxpe.mercado.ticker > paxpe.cadastro.ticker
+Ref: paxpe.dividendos.ticker > paxpe.cadastro.ticker
+Ref: paxpe.valuation.ticker > paxpe.cadastro.ticker
