@@ -14,17 +14,6 @@ O projeto é composto por:
 
 - [Docker](https://www.docker.com/get-started) e [Docker Compose](https://docs.docker.com/compose/install/)
 
-## Clonando o Repositório
-
-Clone o repositório para sua máquina local:
-
-```bash
-git clone https://github.com/ibmendes/paxpe_app.git
-cd paxpe_app
-
-
-O Docker Compose configura e inicia vários serviços. Aqui estão as instruções para acessar cada recurso:
-
 ### 1. Apache Airflow
 
 - **Descrição**: Plataforma para criar, agendar e monitorar workflows de dados.
@@ -51,11 +40,23 @@ O Docker Compose configura e inicia vários serviços. Aqui estão as instruçõ
 - **Descrição**: Plataforma para processamento de dados distribuídos.
 - **URL de Acesso**: [http://localhost:8081](http://localhost:8081/)
 
+### visualização do modelo de entidades relacionais
+- **visualização do starchema a ser gerado**: PAXPE - [STARSCHEMA - dbdiagram](https://dbdiagram.io/d/PA-XPE-STARSCHEMA-670c19dc97a66db9a3d22dba)
+
+## Clonando o Repositório
+Clone o repositório para sua máquina local:
+
+
+```bash
+git clone https://github.com/ibmendes/paxpe_app.git
+cd paxpe_app
+
+
+### O Docker Compose configura e inicia vários serviços. Aqui estão as instruções para acessar cada recurso:
+
 ## Comandos Úteis
 - **Iniciar Serviços**:
   ```bash
   docker-compose up --build
 docker-compose up -d 
    docker compose down #derruba o projeto
-
-visualização do starchema a ser gerado: PAXPE - [STARSCHEMA - dbdiagram](https://dbdiagram.io/d/PA-XPE-STARSCHEMA-670c19dc97a66db9a3d22dba)
