@@ -215,3 +215,17 @@
 [2024-10-20T04:25:44.839+0000] {logging_mixin.py:190} INFO - [2024-10-20T04:25:44.838+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2024-10-20T04:25:44.854+0000] {logging_mixin.py:190} INFO - [2024-10-20T04:25:44.854+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2024-10-20T03:00:00+00:00, run_after=2024-10-21T03:00:00+00:00
 [2024-10-20T04:25:44.865+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.065 seconds
+[2024-10-20T04:26:14.962+0000] {processor.py:186} INFO - Started process (PID=319) to work on /opt/airflow/dags/paxpe_dag.py
+[2024-10-20T04:26:14.963+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2024-10-20T04:26:14.965+0000] {logging_mixin.py:190} INFO - [2024-10-20T04:26:14.965+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2024-10-20T04:26:14.979+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2024-10-20T04:26:14.996+0000] {logging_mixin.py:190} INFO - [2024-10-20T04:26:14.995+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-20T04:26:15.010+0000] {logging_mixin.py:190} INFO - [2024-10-20T04:26:15.010+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2024-10-20T03:00:00+00:00, run_after=2024-10-21T03:00:00+00:00
+[2024-10-20T04:26:15.021+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.063 seconds
+[2024-10-20T04:26:45.150+0000] {processor.py:186} INFO - Started process (PID=327) to work on /opt/airflow/dags/paxpe_dag.py
+[2024-10-20T04:26:45.151+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2024-10-20T04:26:45.153+0000] {logging_mixin.py:190} INFO - [2024-10-20T04:26:45.153+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2024-10-20T04:26:45.165+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2024-10-20T04:26:45.181+0000] {logging_mixin.py:190} INFO - [2024-10-20T04:26:45.181+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-20T04:26:45.197+0000] {logging_mixin.py:190} INFO - [2024-10-20T04:26:45.197+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2024-10-20T03:00:00+00:00, run_after=2024-10-21T03:00:00+00:00
+[2024-10-20T04:26:45.208+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.062 seconds
