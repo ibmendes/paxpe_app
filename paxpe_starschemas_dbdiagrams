@@ -1,78 +1,126 @@
-// Esquema paxpe
 Table paxpe.retorno_mensal {
-  ticker varchar [pk]
+  ticker varchar [pk] // Primary key
   data date
-  retorno decimal(10, 4)
-  created_at timestamp
-  updated_at timestamp
+  abertura float
+  alta float
+  baixa float
+  fechamento float
+  volume float
+  dividendos float
+  desdobramentos float
+  fechamento_mes_anterior float
+  valor_retorno float
+  porcentagem_retorno float
+  dt_ptcao date [not null]
+  dthr_igtao timestamp [not null]
 }
 
 Table paxpe.captacao_mercado {
   ticker varchar [pk]
-  captacao decimal(15, 2)
-  data date
-  created_at timestamp
-  updated_at timestamp
+  nome_curto varchar(100)
+  nome_exibicao varchar(100)
+  preco_mercado_regular float
+  mudanca_mercado_regular float
+  mudanca_percentual_mercado_regular float
+  volume_mercado_regular bigint
+  capitalizacao_mercado bigint
+  nome_exchange_completa varchar(100)
+  nome_fonte_cotacao varchar(100)
+  dt_ptcao varchar(20) [not null]
+  dthr_igtao timestamp [not null]
 }
 
 Table paxpe.cadastro {
   ticker varchar [pk]
-  nome_empresa varchar
-  setor varchar
-  created_at timestamp
-  updated_at timestamp
+  setor varchar(100)
+  industria varchar(100)
+  funcionarios int
+  cidade varchar(100)
+  estado varchar(100)
+  pais varchar(100)
+  website varchar(255)
+  resumo_negocios text
+  exchange varchar(100)
+  dt_ptcao varchar(20) [not null]
+  dthr_igtao timestamp [not null]
 }
+
 
 Table paxpe.financas {
   ticker varchar [pk]
-  receita decimal(15, 2)
-  lucro_liquido decimal(15, 2)
-  margem_liquida decimal(5, 2)
-  data date
-  created_at timestamp
-  updated_at timestamp
+  capitalizacao_mercado bigint
+  valor_empresa bigint
+  receita bigint
+  lucros_brutos bigint
+  lucro_liquido bigint
+  ebitda bigint
+  divida_total bigint
+  caixa_total bigint
+  dividend_yield double
+  dt_ptcao varchar(20) [not null]
+  dthr_igtao timestamp [not null]
 }
 
 Table paxpe.mercado {
   ticker varchar [pk]
-  preco decimal(10, 2)
+  preco_atual double
+  fechamento_anterior double
+  abertura double
+  minimo_dia double
+  maximo_dia double
+  minimo_52_semanas double
+  maximo_52_semanas double
   volume bigint
-  data date
-  created_at timestamp
-  updated_at timestamp
+  volume_medio bigint
+  beta double
+  dt_ptcao varchar(20) [not null]
+  dthr_igtao timestamp [not null]
 }
 
 Table paxpe.dividendos {
   ticker varchar [pk]
-  valor_dividendo decimal(10, 2)
-  data date
-  created_at timestamp
-  updated_at timestamp
+  taxa_dividendo double
+  data_exdividendo varchar(20)
+  indice_distribuicao double
+  dt_ptcao varchar(20) [not null]
+  dthr_igtao timestamp [not null]
 }
 
 Table paxpe.valuation {
   ticker varchar [pk]
-  p_l decimal(5, 2)
-  p_vp decimal(5, 2)
-  ev_ebitda decimal(5, 2)
-  data date
-  created_at timestamp
-  updated_at timestamp
+  pl_futuro double
+  pl_retroativo double
+  preco_booking double
+  indice_preco_lucro_cresc double
+  dt_ptcao varchar(20) [not null]
+  dthr_igtao timestamp [not null]
 }
 
-// Esquema paxpestg
-Table paxpestg.temp_retorno_mensal {
-  ticker varchar
-  data date
-  retorno decimal(10, 4)
-  created_at timestamp
-  updated_at timestamp
+Table paxpe.indices {
+    indice VARCHAR(50) [pk] // Código do índice (ex: ^BVSP)
+    abertura DOUBLE  // Preço de abertura
+    alta DOUBLE  // Preço mais alto
+    baixa DOUBLE  // Preço mais baixo
+    fechamento DOUBLE  // Preço de fechamento
+    fechamento_ajustado DOUBLE  // Preço de fechamento ajustado
+    volume BIGINT // Volume de transações
+    nome_indice VARCHAR(100) // Nome do índice
+    data DATE // Data da observação
+    fechamento_mes_anterior DOUBLE  // Preço de fechamento do mês anterior
+    valor_retorno DOUBLE  // Variação em valor
+    porcentagem_retorno DOUBLE  // Variação em porcentagem
+    dt_ptcao DATE // Data de coleta
+    dthr_igtao TIMESTAMP // Data e hora da coleta
 }
 
 // Relacionamentos
-Ref: paxpe.retorno_mensal.ticker > paxpe.cadastro.ticker
+Ref: paxpe.captacao_mercado.ticker > paxpe.retorno_mensal.ticker
+Ref: paxpe.captacao_mercado.ticker > paxpe.mercado.ticker
+Ref: paxpe.captacao_mercado.ticker > paxpe.financas.ticker
+Ref: paxpe.captacao_mercado.ticker > paxpe.valuation.ticker
 Ref: paxpe.captacao_mercado.ticker > paxpe.cadastro.ticker
-Ref: paxpe.financas.ticker > paxpe.cadastro.ticker
-Ref: paxpe.mercado.ticker > paxpe.cadastro.ticker
-Ref: paxpe.dividendos.ticker > paxpe.cadastro.ticker
-Ref: paxpe.valuation.ticker > paxpe.cadastro.ticker
+Ref: paxpe.captacao_mercado.ticker > paxpe.dividendos.ticker
+
+Ref: "paxpe"."retorno_mensal"."data" < "paxpe"."retorno_mensal"."fechamento"
+
+Ref: "paxpe"."indices"."data" < "paxpe"."retorno_mensal"."data"

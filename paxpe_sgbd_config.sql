@@ -211,7 +211,42 @@ COMMENT ON COLUMN paxpe.valuation.indice_preco_lucro_cresc IS 'Peg Ratio';
 COMMENT ON COLUMN paxpe.valuation.dt_ptcao IS 'Data no formato ''dd/mm/aaaa''';
 COMMENT ON COLUMN paxpe.valuation.dthr_igtao IS 'Data e hora da criação do registro';
 
+-- release sprint 3 ---- 
 
+-- Criar tabela no schema paxpe
+CREATE TABLE IF NOT EXISTS paxpe.indices (
+    indice VARCHAR(50) NOT NULL,  -- Código do índice (ex: ^BVSP)
+    abertura DOUBLE PRECISION,      -- Preço de abertura
+    alta DOUBLE PRECISION,          -- Preço mais alto
+    baixa DOUBLE PRECISION,         -- Preço mais baixo
+    fechamento DOUBLE PRECISION,    -- Preço de fechamento
+    fechamento_ajustado DOUBLE PRECISION,  -- Preço de fechamento ajustado
+    volume BIGINT,                  -- Volume de transações
+    nome_indice VARCHAR(100),       -- Nome do índice
+    data DATE,                      -- Data da observação
+    fechamento_mes_anterior DOUBLE PRECISION,  -- Preço de fechamento do mês anterior
+    valor_retorno DOUBLE PRECISION,  -- Variação em valor
+    porcentagem_retorno DOUBLE PRECISION,  -- Variação em porcentagem
+    dt_ptcao VARCHAR(20) NOT NULL,         -- Data de coleta
+    dthr_igtao TIMESTAMP NOT NULL,  -- Data e hora da coleta
+    CONSTRAINT unique_indice_data UNIQUE (indice, data)  -- Restrições de unicidade para índice e data
+);
+
+-- Comentários para as colunas da tabela paxpe
+COMMENT ON COLUMN paxpe.indices.indice IS 'Código do índice (ex: ^BVSP)';
+COMMENT ON COLUMN paxpe.indices.abertura IS 'Preço de abertura';
+COMMENT ON COLUMN paxpe.indices.alta IS 'Preço mais alto';
+COMMENT ON COLUMN paxpe.indices.baixa IS 'Preço mais baixo';
+COMMENT ON COLUMN paxpe.indices.fechamento IS 'Preço de fechamento';
+COMMENT ON COLUMN paxpe.indices.fechamento_ajustado IS 'Preço de fechamento ajustado';
+COMMENT ON COLUMN paxpe.indices.volume IS 'Volume de transações';
+COMMENT ON COLUMN paxpe.indices.nome_indice IS 'Nome do índice';
+COMMENT ON COLUMN paxpe.indices.data IS 'Data da observação';
+COMMENT ON COLUMN paxpe.indices.fechamento_mes_anterior IS 'Preço de fechamento do mês anterior';
+COMMENT ON COLUMN paxpe.indices.valor_retorno IS 'Variação em valor';
+COMMENT ON COLUMN paxpe.indices.porcentagem_retorno IS 'Variação em porcentagem';
+COMMENT ON COLUMN paxpe.indices.dt_ptcao IS 'Data de coleta';
+COMMENT ON COLUMN paxpe.indices.dthr_igtao IS 'Data e hora da coleta';
 
 ---------------------- stage 
 
@@ -410,7 +445,40 @@ COMMENT ON COLUMN paxpestg.temp_valuation.indice_preco_lucro_cresc IS 'Peg Ratio
 COMMENT ON COLUMN paxpestg.temp_valuation.dt_ptcao IS 'Data no formato ''dd/mm/aaaa''';
 COMMENT ON COLUMN paxpestg.temp_valuation.dthr_igtao IS 'Data e hora da criação do registro';
 
+-- release sprint 3 --- indicadores econômicos 
+-- Criar tabela no schema paxpestg
+CREATE TABLE IF NOT EXISTS paxpestg.temp_indices (
+    indice VARCHAR(50) NOT NULL,  -- Código do índice (ex: ^BVSP)
+    abertura DOUBLE PRECISION,      -- Preço de abertura
+    alta DOUBLE PRECISION,          -- Preço mais alto
+    baixa DOUBLE PRECISION,         -- Preço mais baixo
+    fechamento DOUBLE PRECISION,    -- Preço de fechamento
+    fechamento_ajustado DOUBLE PRECISION,  -- Preço de fechamento ajustado
+    volume BIGINT,                  -- Volume de transações
+    nome_indice VARCHAR(100),       -- Nome do índice
+    data DATE,                      -- Data da observação
+    fechamento_mes_anterior DOUBLE PRECISION,  -- Preço de fechamento do mês anterior
+    valor_retorno DOUBLE PRECISION,  -- Variação em valor
+    porcentagem_retorno DOUBLE PRECISION,  -- Variação em porcentagem
+    dt_ptcao VARCHAR(20) NOT NULL,         -- Data de coleta
+    dthr_igtao TIMESTAMP NOT NULL    -- Data e hora da coleta
+);
 
+-- Comentários para as colunas da tabela paxpestg
+COMMENT ON COLUMN paxpestg.temp_indices.indice IS 'Código do índice (ex: ^BVSP)';
+COMMENT ON COLUMN paxpestg.temp_indices.abertura IS 'Preço de abertura';
+COMMENT ON COLUMN paxpestg.temp_indices.alta IS 'Preço mais alto';
+COMMENT ON COLUMN paxpestg.temp_indices.baixa IS 'Preço mais baixo';
+COMMENT ON COLUMN paxpestg.temp_indices.fechamento IS 'Preço de fechamento';
+COMMENT ON COLUMN paxpestg.temp_indices.fechamento_ajustado IS 'Preço de fechamento ajustado';
+COMMENT ON COLUMN paxpestg.temp_indices.volume IS 'Volume de transações';
+COMMENT ON COLUMN paxpestg.temp_indices.nome_indice IS 'Nome do índice';
+COMMENT ON COLUMN paxpestg.temp_indices.data IS 'Data da observação';
+COMMENT ON COLUMN paxpestg.temp_indices.fechamento_mes_anterior IS 'Preço de fechamento do mês anterior';
+COMMENT ON COLUMN paxpestg.temp_indices.valor_retorno IS 'Variação em valor';
+COMMENT ON COLUMN paxpestg.temp_indices.porcentagem_retorno IS 'Variação em porcentagem';
+COMMENT ON COLUMN paxpestg.temp_indices.dt_ptcao IS 'Data de coleta';
+COMMENT ON COLUMN paxpestg.temp_indices.dthr_igtao IS 'Data e hora da coleta';
 
 
 -- Adicionar restrição de unicidade para a tabela 'cadastro'
@@ -440,3 +508,5 @@ ALTER TABLE IF EXISTS paxpe.retorno_mensal
 -- ticker constraint 
 ALTER TABLE paxpe.captacao_mercado
 ADD CONSTRAINT unique_ticker_cap_mercado UNIQUE (ticker);
+
+-- implementações sprint 3 
