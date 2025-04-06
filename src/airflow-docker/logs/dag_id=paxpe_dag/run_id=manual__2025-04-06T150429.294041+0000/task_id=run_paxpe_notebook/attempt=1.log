@@ -1,0 +1,74 @@
+[2025-04-06T15:04:30.196+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T15:04:30.203+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: paxpe_dag.run_paxpe_notebook manual__2025-04-06T15:04:29.294041+00:00 [queued]>
+[2025-04-06T15:04:30.207+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: paxpe_dag.run_paxpe_notebook manual__2025-04-06T15:04:29.294041+00:00 [queued]>
+[2025-04-06T15:04:30.208+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 2
+[2025-04-06T15:04:30.214+0000] {taskinstance.py:2879} INFO - Executing <Task(PapermillOperator): run_paxpe_notebook> on 2025-04-06 15:04:29.294041+00:00
+[2025-04-06T15:04:30.217+0000] {standard_task_runner.py:72} INFO - Started process 2184 to run task
+[2025-04-06T15:04:30.219+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'paxpe_dag', 'run_paxpe_notebook', 'manual__2025-04-06T15:04:29.294041+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/paxpe_dag.py', '--cfg-path', '/tmp/tmptxr0da17']
+[2025-04-06T15:04:30.221+0000] {standard_task_runner.py:105} INFO - Job 62: Subtask run_paxpe_notebook
+[2025-04-06T15:04:30.243+0000] {task_command.py:467} INFO - Running <TaskInstance: paxpe_dag.run_paxpe_notebook manual__2025-04-06T15:04:29.294041+00:00 [running]> on host 2277100172d4
+[2025-04-06T15:04:30.282+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='paxpe_dag' AIRFLOW_CTX_TASK_ID='run_paxpe_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T15:04:29.294041+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T15:04:29.294041+00:00'
+[2025-04-06T15:04:30.283+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-06T15:04:30.290+0000] {execute.py:83} INFO - Input Notebook:  /opt/***/dags/utils/paxpe.ipynb
+[2025-04-06T15:04:30.290+0000] {execute.py:84} INFO - Output Notebook: /opt/***/dags/utils/paxpe_log.ipynb
+[2025-04-06T15:04:31.431+0000] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2025-04-06T15:05:00.426+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2025-04-06T15:05:00.426+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-04-06T15:05:00.427+0000] {process_utils.py:132} INFO - Sending 15 to group 2184. PIDs of all processes in the group: [2189, 2236, 2390, 2394, 2395, 2400, 2406, 2409, 2414, 2416, 2420, 2184]
+[2025-04-06T15:05:00.428+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 2184
+[2025-04-06T15:05:00.428+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-04-06T15:05:00.520+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2406, status='terminated', started='15:04:53') (2406) terminated with exit code None
+[2025-04-06T15:05:00.521+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2414, status='terminated', started='15:04:53') (2414) terminated with exit code None
+[2025-04-06T15:05:00.521+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2409, status='terminated', started='15:04:53') (2409) terminated with exit code None
+[2025-04-06T15:05:00.521+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2420, status='terminated', started='15:04:53') (2420) terminated with exit code None
+[2025-04-06T15:05:00.521+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2394, status='terminated', started='15:04:53') (2394) terminated with exit code None
+[2025-04-06T15:05:00.522+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2416, status='terminated', started='15:04:53') (2416) terminated with exit code None
+[2025-04-06T15:05:00.522+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2400, status='terminated', started='15:04:53') (2400) terminated with exit code None
+[2025-04-06T15:05:00.522+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2395, status='terminated', started='15:04:53') (2395) terminated with exit code None
+[2025-04-06T15:05:00.523+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2390, status='terminated', started='15:04:52') (2390) terminated with exit code None
+[2025-04-06T15:05:03.068+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/papermill/operators/papermill.py", line 118, in execute
+    pm.execute_notebook(
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/execute.py", line 116, in execute_notebook
+    nb = papermill_engines.execute_notebook_with_engine(
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/engines.py", line 48, in execute_notebook_with_engine
+    return self.get_engine(engine_name).execute_notebook(nb, kernel_name, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/engines.py", line 370, in execute_notebook
+    cls.execute_managed_notebook(nb_man, kernel_name, log_output=log_output, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/engines.py", line 442, in execute_managed_notebook
+    return PapermillNotebookClient(nb_man, **final_kwargs).execute()
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/clientwrap.py", line 45, in execute
+    self.papermill_execute_cells()
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/clientwrap.py", line 72, in papermill_execute_cells
+    self.execute_cell(cell, index)
+  File "/home/airflow/.local/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
+    self._run_once()
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/local/lib/python3.8/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3085, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-04-06T15:05:03.072+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=paxpe_dag, task_id=run_paxpe_notebook, run_id=manual__2025-04-06T15:04:29.294041+00:00, execution_date=20250406T150429, start_date=20250406T150430, end_date=20250406T150503
+[2025-04-06T15:05:03.079+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-06T15:05:03.315+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2184, status='terminated', exitcode=2, started='15:04:29') (2184) terminated with exit code 2
+[2025-04-06T15:05:03.316+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2189, status='terminated', started='15:04:30') (2189) terminated with exit code None
+[2025-04-06T15:05:05.255+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-04-06T15:06:00.435+0000] {process_utils.py:150} WARNING - process psutil.Process(pid=2236, name='java', status='zombie', started='15:04:45') did not respond to SIGTERM. Trying SIGKILL
+[2025-04-06T15:06:00.436+0000] {process_utils.py:87} INFO - Sending the signal 9 to group 2184
+[2025-04-06T15:06:00.436+0000] {process_utils.py:101} INFO - Sending the signal 9 to process 2184 as process group is missing.
+[2025-04-06T15:07:00.452+0000] {process_utils.py:161} ERROR - Process psutil.Process(pid=2236, name='java', status='zombie', started='15:04:45') (2236) could not be killed. Giving up.
