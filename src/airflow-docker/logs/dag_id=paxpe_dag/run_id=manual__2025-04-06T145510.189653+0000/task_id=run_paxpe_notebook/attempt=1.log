@@ -1,0 +1,285 @@
+[2025-04-06T14:55:11.470+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-06T14:55:11.477+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: paxpe_dag.run_paxpe_notebook manual__2025-04-06T14:55:10.189653+00:00 [queued]>
+[2025-04-06T14:55:11.481+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: paxpe_dag.run_paxpe_notebook manual__2025-04-06T14:55:10.189653+00:00 [queued]>
+[2025-04-06T14:55:11.482+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 2
+[2025-04-06T14:55:11.488+0000] {taskinstance.py:2879} INFO - Executing <Task(PapermillOperator): run_paxpe_notebook> on 2025-04-06 14:55:10.189653+00:00
+[2025-04-06T14:55:11.491+0000] {standard_task_runner.py:72} INFO - Started process 119 to run task
+[2025-04-06T14:55:11.492+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'paxpe_dag', 'run_paxpe_notebook', 'manual__2025-04-06T14:55:10.189653+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/paxpe_dag.py', '--cfg-path', '/tmp/tmpw4_x5km2']
+[2025-04-06T14:55:11.494+0000] {standard_task_runner.py:105} INFO - Job 58: Subtask run_paxpe_notebook
+[2025-04-06T14:55:11.516+0000] {task_command.py:467} INFO - Running <TaskInstance: paxpe_dag.run_paxpe_notebook manual__2025-04-06T14:55:10.189653+00:00 [running]> on host 2277100172d4
+[2025-04-06T14:55:11.649+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='paxpe_dag' AIRFLOW_CTX_TASK_ID='run_paxpe_notebook' AIRFLOW_CTX_EXECUTION_DATE='2025-04-06T14:55:10.189653+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-06T14:55:10.189653+00:00'
+[2025-04-06T14:55:11.650+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-06T14:55:11.657+0000] {execute.py:83} INFO - Input Notebook:  /opt/***/dags/utils/paxpe.ipynb
+[2025-04-06T14:55:11.657+0000] {execute.py:84} INFO - Output Notebook: /opt/***/dags/utils/paxpe_log.ipynb
+[2025-04-06T14:55:12.797+0000] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2025-04-06T14:55:51.074+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/papermill/operators/papermill.py", line 118, in execute
+    pm.execute_notebook(
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [11]":
+---------------------------------------------------------------------------
+PySparkValueError                         Traceback (most recent call last)
+Cell In[11], line 2
+      1 historical_data = obter_dados_historicos(df_tickers, start_date_str, end_date_str)
+----> 2 df_retorno_mensal = retorno_mensal(historical_data)
+      4 # Mostrar o DataFrame final
+      5 df_retorno_mensal.show()
+
+Cell In[7], line 10, in retorno_mensal(dados)
+      6 for symbol, df in dados.items():
+      7     # Converter DataFrame do Pandas para PySpark
+      8     df['symbol'] = symbol
+---> 10     df_spark = spark.createDataFrame(df.reset_index())
+     13     # Renomear colunas para português
+     14     df_spark = df_spark.withColumnRenamed('symbol', 'ticker') \
+     15                     .withColumnRenamed('Date', 'data') \
+     16                     .withColumnRenamed('Open', 'abertura') \
+   (...)
+     21                     .withColumnRenamed('Dividends', 'dividendos') \
+     22                     .withColumnRenamed('Stock Splits', 'desdobramentos')
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1440, in SparkSession.createDataFrame(self, data, schema, samplingRatio, verifySchema)
+   1436     data = pd.DataFrame(data, columns=column_names)
+   1438 if has_pandas and isinstance(data, pd.DataFrame):
+   1439     # Create a DataFrame from pandas DataFrame.
+-> 1440     return super(SparkSession, self).createDataFrame(  # type: ignore[call-overload]
+   1441         data, schema, samplingRatio, verifySchema
+   1442     )
+   1443 return self._create_dataframe(
+   1444     data, schema, samplingRatio, verifySchema  # type: ignore[arg-type]
+   1445 )
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/pandas/conversion.py:363, in SparkConversionMixin.createDataFrame(self, data, schema, samplingRatio, verifySchema)
+    361             raise
+    362 converted_data = self._convert_from_pandas(data, schema, timezone)
+--> 363 return self._create_dataframe(converted_data, schema, samplingRatio, verifySchema)
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1485, in SparkSession._create_dataframe(self, data, schema, samplingRatio, verifySchema)
+   1483     rdd, struct = self._createFromRDD(data.map(prepare), schema, samplingRatio)
+   1484 else:
+-> 1485     rdd, struct = self._createFromLocal(map(prepare, data), schema)
+   1486 assert self._jvm is not None
+   1487 jrdd = self._jvm.SerDeUtil.toJavaArray(rdd._to_java_object_rdd())
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1093, in SparkSession._createFromLocal(self, data, schema)
+   1090     data = list(data)
+   1092 if schema is None or isinstance(schema, (list, tuple)):
+-> 1093     struct = self._inferSchemaFromList(data, names=schema)
+   1094     converter = _create_converter(struct)
+   1095     tupled_data: Iterable[Tuple] = map(converter, data)
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:948, in SparkSession._inferSchemaFromList(self, data, names)
+    933 """
+    934 Infer schema from list of Row, dict, or tuple.
+    935 
+   (...)
+    945 :class:`pyspark.sql.types.StructType`
+    946 """
+    947 if not data:
+--> 948     raise PySparkValueError(
+    949         error_class="CANNOT_INFER_EMPTY_SCHEMA",
+    950         message_parameters={},
+    951     )
+    952 infer_dict_as_struct = self._jconf.inferDictAsStruct()
+    953 infer_array_from_first_element = self._jconf.legacyInferArrayTypeFromFirstElement()
+
+PySparkValueError: [CANNOT_INFER_EMPTY_SCHEMA] Can not infer schema from empty dataset.
+
+[2025-04-06T14:55:51.082+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=paxpe_dag, task_id=run_paxpe_notebook, run_id=manual__2025-04-06T14:55:10.189653+00:00, execution_date=20250406T145510, start_date=20250406T145511, end_date=20250406T145551
+[2025-04-06T14:55:51.090+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-06T14:55:51.091+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 58 for task run_paxpe_notebook (
+---------------------------------------------------------------------------
+Exception encountered at "In [11]":
+---------------------------------------------------------------------------
+PySparkValueError                         Traceback (most recent call last)
+Cell In[11], line 2
+      1 historical_data = obter_dados_historicos(df_tickers, start_date_str, end_date_str)
+----> 2 df_retorno_mensal = retorno_mensal(historical_data)
+      4 # Mostrar o DataFrame final
+      5 df_retorno_mensal.show()
+
+Cell In[7], line 10, in retorno_mensal(dados)
+      6 for symbol, df in dados.items():
+      7     # Converter DataFrame do Pandas para PySpark
+      8     df['symbol'] = symbol
+---> 10     df_spark = spark.createDataFrame(df.reset_index())
+     13     # Renomear colunas para português
+     14     df_spark = df_spark.withColumnRenamed('symbol', 'ticker') \
+     15                     .withColumnRenamed('Date', 'data') \
+     16                     .withColumnRenamed('Open', 'abertura') \
+   (...)
+     21                     .withColumnRenamed('Dividends', 'dividendos') \
+     22                     .withColumnRenamed('Stock Splits', 'desdobramentos')
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1440, in SparkSession.createDataFrame(self, data, schema, samplingRatio, verifySchema)
+   1436     data = pd.DataFrame(data, columns=column_names)
+   1438 if has_pandas and isinstance(data, pd.DataFrame):
+   1439     # Create a DataFrame from pandas DataFrame.
+-> 1440     return super(SparkSession, self).createDataFrame(  # type: ignore[call-overload]
+   1441         data, schema, samplingRatio, verifySchema
+   1442     )
+   1443 return self._create_dataframe(
+   1444     data, schema, samplingRatio, verifySchema  # type: ignore[arg-type]
+   1445 )
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/pandas/conversion.py:363, in SparkConversionMixin.createDataFrame(self, data, schema, samplingRatio, verifySchema)
+    361             raise
+    362 converted_data = self._convert_from_pandas(data, schema, timezone)
+--> 363 return self._create_dataframe(converted_data, schema, samplingRatio, verifySchema)
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1485, in SparkSession._create_dataframe(self, data, schema, samplingRatio, verifySchema)
+   1483     rdd, struct = self._createFromRDD(data.map(prepare), schema, samplingRatio)
+   1484 else:
+-> 1485     rdd, struct = self._createFromLocal(map(prepare, data), schema)
+   1486 assert self._jvm is not None
+   1487 jrdd = self._jvm.SerDeUtil.toJavaArray(rdd._to_java_object_rdd())
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1093, in SparkSession._createFromLocal(self, data, schema)
+   1090     data = list(data)
+   1092 if schema is None or isinstance(schema, (list, tuple)):
+-> 1093     struct = self._inferSchemaFromList(data, names=schema)
+   1094     converter = _create_converter(struct)
+   1095     tupled_data: Iterable[Tuple] = map(converter, data)
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:948, in SparkSession._inferSchemaFromList(self, data, names)
+    933 """
+    934 Infer schema from list of Row, dict, or tuple.
+    935 
+   (...)
+    945 :class:`pyspark.sql.types.StructType`
+    946 """
+    947 if not data:
+--> 948     raise PySparkValueError(
+    949         error_class="CANNOT_INFER_EMPTY_SCHEMA",
+    950         message_parameters={},
+    951     )
+    952 infer_dict_as_struct = self._jconf.inferDictAsStruct()
+    953 infer_array_from_first_element = self._jconf.legacyInferArrayTypeFromFirstElement()
+
+PySparkValueError: [CANNOT_INFER_EMPTY_SCHEMA] Can not infer schema from empty dataset.
+; 119)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/papermill/operators/papermill.py", line 118, in execute
+    pm.execute_notebook(
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [11]":
+---------------------------------------------------------------------------
+PySparkValueError                         Traceback (most recent call last)
+Cell In[11], line 2
+      1 historical_data = obter_dados_historicos(df_tickers, start_date_str, end_date_str)
+----> 2 df_retorno_mensal = retorno_mensal(historical_data)
+      4 # Mostrar o DataFrame final
+      5 df_retorno_mensal.show()
+
+Cell In[7], line 10, in retorno_mensal(dados)
+      6 for symbol, df in dados.items():
+      7     # Converter DataFrame do Pandas para PySpark
+      8     df['symbol'] = symbol
+---> 10     df_spark = spark.createDataFrame(df.reset_index())
+     13     # Renomear colunas para português
+     14     df_spark = df_spark.withColumnRenamed('symbol', 'ticker') \
+     15                     .withColumnRenamed('Date', 'data') \
+     16                     .withColumnRenamed('Open', 'abertura') \
+   (...)
+     21                     .withColumnRenamed('Dividends', 'dividendos') \
+     22                     .withColumnRenamed('Stock Splits', 'desdobramentos')
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1440, in SparkSession.createDataFrame(self, data, schema, samplingRatio, verifySchema)
+   1436     data = pd.DataFrame(data, columns=column_names)
+   1438 if has_pandas and isinstance(data, pd.DataFrame):
+   1439     # Create a DataFrame from pandas DataFrame.
+-> 1440     return super(SparkSession, self).createDataFrame(  # type: ignore[call-overload]
+   1441         data, schema, samplingRatio, verifySchema
+   1442     )
+   1443 return self._create_dataframe(
+   1444     data, schema, samplingRatio, verifySchema  # type: ignore[arg-type]
+   1445 )
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/pandas/conversion.py:363, in SparkConversionMixin.createDataFrame(self, data, schema, samplingRatio, verifySchema)
+    361             raise
+    362 converted_data = self._convert_from_pandas(data, schema, timezone)
+--> 363 return self._create_dataframe(converted_data, schema, samplingRatio, verifySchema)
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1485, in SparkSession._create_dataframe(self, data, schema, samplingRatio, verifySchema)
+   1483     rdd, struct = self._createFromRDD(data.map(prepare), schema, samplingRatio)
+   1484 else:
+-> 1485     rdd, struct = self._createFromLocal(map(prepare, data), schema)
+   1486 assert self._jvm is not None
+   1487 jrdd = self._jvm.SerDeUtil.toJavaArray(rdd._to_java_object_rdd())
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:1093, in SparkSession._createFromLocal(self, data, schema)
+   1090     data = list(data)
+   1092 if schema is None or isinstance(schema, (list, tuple)):
+-> 1093     struct = self._inferSchemaFromList(data, names=schema)
+   1094     converter = _create_converter(struct)
+   1095     tupled_data: Iterable[Tuple] = map(converter, data)
+
+File ~/.local/lib/python3.8/site-packages/pyspark/sql/session.py:948, in SparkSession._inferSchemaFromList(self, data, names)
+    933 """
+    934 Infer schema from list of Row, dict, or tuple.
+    935 
+   (...)
+    945 :class:`pyspark.sql.types.StructType`
+    946 """
+    947 if not data:
+--> 948     raise PySparkValueError(
+    949         error_class="CANNOT_INFER_EMPTY_SCHEMA",
+    950         message_parameters={},
+    951     )
+    952 infer_dict_as_struct = self._jconf.inferDictAsStruct()
+    953 infer_array_from_first_element = self._jconf.legacyInferArrayTypeFromFirstElement()
+
+PySparkValueError: [CANNOT_INFER_EMPTY_SCHEMA] Can not infer schema from empty dataset.
+
+[2025-04-06T14:55:51.118+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-04-06T14:55:51.226+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-06T14:55:51.226+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

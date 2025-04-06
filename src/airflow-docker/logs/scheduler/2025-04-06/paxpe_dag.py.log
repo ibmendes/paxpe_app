@@ -1,0 +1,357 @@
+[2025-04-06T14:50:10.324+0000] {processor.py:186} INFO - Started process (PID=49) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:50:10.325+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:50:10.326+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:50:10.326+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:50:10.335+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:50:10.353+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:50:10.352+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:50:10.367+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:50:10.367+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:50:10.377+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.056 seconds
+[2025-04-06T14:50:40.460+0000] {processor.py:186} INFO - Started process (PID=56) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:50:40.461+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:50:40.462+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:50:40.462+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:50:40.473+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:50:40.486+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:50:40.486+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:50:40.499+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:50:40.499+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:50:40.507+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.050 seconds
+[2025-04-06T14:51:10.614+0000] {processor.py:186} INFO - Started process (PID=65) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:51:10.614+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:51:10.616+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:51:10.616+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:51:10.626+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:51:10.639+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:51:10.638+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:51:10.653+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:51:10.652+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:51:10.661+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.051 seconds
+[2025-04-06T14:51:42.971+0000] {processor.py:186} INFO - Started process (PID=48) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:51:42.971+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:51:42.972+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:51:42.972+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:51:42.982+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:51:42.997+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:51:42.997+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:51:43.011+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:51:43.011+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:51:43.020+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.053 seconds
+[2025-04-06T14:52:13.114+0000] {processor.py:186} INFO - Started process (PID=56) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:52:13.114+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:52:13.116+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:52:13.115+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:52:13.124+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:52:13.137+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:52:13.137+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:52:13.157+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:52:13.157+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:52:13.165+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.054 seconds
+[2025-04-06T14:52:43.256+0000] {processor.py:186} INFO - Started process (PID=64) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:52:43.256+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:52:43.258+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:52:43.258+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:52:43.268+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:52:43.281+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:52:43.281+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:52:43.296+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:52:43.296+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:52:43.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.053 seconds
+[2025-04-06T14:53:13.385+0000] {processor.py:186} INFO - Started process (PID=72) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:53:13.386+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:53:13.388+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:53:13.388+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:53:13.403+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:53:13.416+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:53:13.415+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:53:13.429+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:53:13.429+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:53:13.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.056 seconds
+[2025-04-06T14:53:43.572+0000] {processor.py:186} INFO - Started process (PID=80) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:53:43.573+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:53:43.574+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:53:43.574+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:53:43.583+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:53:43.597+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:53:43.597+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:53:43.611+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:53:43.611+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:53:43.620+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.051 seconds
+[2025-04-06T14:54:13.705+0000] {processor.py:186} INFO - Started process (PID=88) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:54:13.706+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:54:13.707+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:54:13.707+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:54:13.716+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:54:13.729+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:54:13.729+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:54:13.743+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:54:13.743+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:54:13.751+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.049 seconds
+[2025-04-06T14:54:43.885+0000] {processor.py:186} INFO - Started process (PID=96) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:54:43.885+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:54:43.886+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:54:43.886+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:54:43.896+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:54:43.910+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:54:43.909+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:54:43.929+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:54:43.929+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:54:43.939+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.058 seconds
+[2025-04-06T14:55:14.012+0000] {processor.py:186} INFO - Started process (PID=104) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:55:14.012+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:55:14.013+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:55:14.013+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:55:14.023+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:55:14.036+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:55:14.036+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:55:14.049+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:55:14.049+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:55:14.058+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.050 seconds
+[2025-04-06T14:55:44.181+0000] {processor.py:186} INFO - Started process (PID=112) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:55:44.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:55:44.183+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:55:44.183+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:55:44.193+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:55:44.206+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:55:44.206+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:55:44.219+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:55:44.219+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:55:44.228+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.050 seconds
+[2025-04-06T14:56:14.324+0000] {processor.py:186} INFO - Started process (PID=125) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:56:14.325+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:56:14.326+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:56:14.326+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:56:14.337+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:56:14.351+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:56:14.351+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:56:14.365+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:56:14.365+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:56:14.375+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.055 seconds
+[2025-04-06T14:56:44.473+0000] {processor.py:186} INFO - Started process (PID=133) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:56:44.473+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:56:44.475+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:56:44.475+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:56:44.484+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:56:44.498+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:56:44.497+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:56:44.511+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:56:44.511+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:56:44.519+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.050 seconds
+[2025-04-06T14:57:14.611+0000] {processor.py:186} INFO - Started process (PID=141) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:57:14.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:57:14.613+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:57:14.613+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:57:14.624+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:57:14.639+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:57:14.639+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:57:14.653+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:57:14.653+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:57:14.662+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.056 seconds
+[2025-04-06T14:57:44.763+0000] {processor.py:186} INFO - Started process (PID=149) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:57:44.764+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:57:44.765+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:57:44.765+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:57:44.776+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:57:44.789+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:57:44.789+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:57:44.802+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:57:44.802+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:57:44.812+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.052 seconds
+[2025-04-06T14:58:14.908+0000] {processor.py:186} INFO - Started process (PID=157) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:58:14.909+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:58:14.910+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:58:14.910+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:58:14.922+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:58:14.937+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:58:14.936+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:58:14.951+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:58:14.951+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:58:14.962+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.057 seconds
+[2025-04-06T14:58:45.041+0000] {processor.py:186} INFO - Started process (PID=165) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:58:45.043+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:58:45.044+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:58:45.044+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:58:45.060+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:58:45.077+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:58:45.077+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:58:45.091+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:58:45.091+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:58:45.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.063 seconds
+[2025-04-06T14:59:15.201+0000] {processor.py:186} INFO - Started process (PID=173) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:59:15.201+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:59:15.202+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:59:15.202+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:59:15.212+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:59:15.227+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:59:15.226+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:59:15.243+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:59:15.243+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:59:15.255+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.058 seconds
+[2025-04-06T14:59:45.330+0000] {processor.py:186} INFO - Started process (PID=181) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:59:45.330+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T14:59:45.331+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:59:45.331+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:59:45.341+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T14:59:45.354+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:59:45.354+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T14:59:45.368+0000] {logging_mixin.py:190} INFO - [2025-04-06T14:59:45.368+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T14:59:45.378+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.051 seconds
+[2025-04-06T15:00:15.566+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:00:15.569+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:00:15.590+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:00:15.590+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:00:15.663+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:00:15.681+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:00:15.680+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:00:15.718+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:00:15.718+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:00:15.746+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.183 seconds
+[2025-04-06T15:00:45.866+0000] {processor.py:186} INFO - Started process (PID=197) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:00:45.867+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:00:45.868+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:00:45.868+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:00:45.881+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:00:45.898+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:00:45.897+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:00:45.918+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:00:45.918+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:00:45.935+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.073 seconds
+[2025-04-06T15:01:16.032+0000] {processor.py:186} INFO - Started process (PID=205) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:01:16.032+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:01:16.034+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:01:16.034+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:01:16.045+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:01:16.062+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:01:16.061+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:01:16.077+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:01:16.077+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:01:16.088+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.060 seconds
+[2025-04-06T15:01:46.206+0000] {processor.py:186} INFO - Started process (PID=213) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:01:46.207+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:01:46.208+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:01:46.208+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:01:46.219+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:01:46.231+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:01:46.231+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:01:46.246+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:01:46.246+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:01:46.256+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.052 seconds
+[2025-04-06T15:02:16.328+0000] {processor.py:186} INFO - Started process (PID=221) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:02:16.329+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:02:16.330+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:02:16.330+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:02:16.342+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:02:16.355+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:02:16.355+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:02:16.368+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:02:16.368+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:02:16.377+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.053 seconds
+[2025-04-06T15:02:46.509+0000] {processor.py:186} INFO - Started process (PID=229) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:02:46.510+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:02:46.511+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:02:46.511+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:02:46.521+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:02:46.534+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:02:46.533+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:02:46.547+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:02:46.547+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:02:46.556+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.051 seconds
+[2025-04-06T15:03:16.628+0000] {processor.py:186} INFO - Started process (PID=237) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:03:16.628+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:03:16.630+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:03:16.630+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:03:16.640+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:03:16.654+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:03:16.653+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:03:16.667+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:03:16.667+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:03:16.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.051 seconds
+[2025-04-06T15:03:46.770+0000] {processor.py:186} INFO - Started process (PID=245) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:03:46.770+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:03:46.772+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:03:46.772+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:03:46.781+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:03:46.793+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:03:46.793+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:03:46.808+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:03:46.807+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:03:46.816+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.050 seconds
+[2025-04-06T15:04:16.900+0000] {processor.py:186} INFO - Started process (PID=253) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:04:16.900+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:04:16.902+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:04:16.902+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:04:16.912+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:04:16.926+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:04:16.926+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:04:16.943+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:04:16.943+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:04:16.961+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.065 seconds
+[2025-04-06T15:04:47.051+0000] {processor.py:186} INFO - Started process (PID=262) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:04:47.051+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:04:47.054+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:04:47.054+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:04:47.068+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:04:47.085+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:04:47.084+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:04:47.101+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:04:47.101+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:04:47.115+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.069 seconds
+[2025-04-06T15:05:17.305+0000] {processor.py:186} INFO - Started process (PID=270) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:05:17.305+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:05:17.306+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:05:17.306+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:05:17.317+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:05:17.331+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:05:17.330+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:05:17.346+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:05:17.346+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:05:17.357+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.056 seconds
+[2025-04-06T15:05:47.484+0000] {processor.py:186} INFO - Started process (PID=278) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:05:47.487+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:05:47.491+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:05:47.491+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:05:47.503+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:05:47.522+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:05:47.522+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:05:47.546+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:05:47.546+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:05:47.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.081 seconds
+[2025-04-06T15:06:17.635+0000] {processor.py:186} INFO - Started process (PID=286) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:06:17.635+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:06:17.637+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:06:17.637+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:06:17.655+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:06:17.679+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:06:17.678+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:06:17.695+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:06:17.694+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:06:17.709+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.078 seconds
+[2025-04-06T15:06:47.827+0000] {processor.py:186} INFO - Started process (PID=294) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:06:47.827+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:06:47.829+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:06:47.829+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:06:47.838+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:06:47.850+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:06:47.850+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:06:47.862+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:06:47.862+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:06:47.871+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.047 seconds
+[2025-04-06T15:07:17.988+0000] {processor.py:186} INFO - Started process (PID=302) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:07:17.988+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:07:17.990+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:07:17.990+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:07:17.999+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:07:18.012+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:07:18.011+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:07:18.024+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:07:18.024+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:07:18.034+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.049 seconds
+[2025-04-06T15:07:48.111+0000] {processor.py:186} INFO - Started process (PID=310) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:07:48.111+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:07:48.112+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:07:48.112+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:07:48.121+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:07:48.134+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:07:48.134+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:07:48.147+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:07:48.147+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:07:48.156+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.049 seconds
+[2025-04-06T15:08:18.266+0000] {processor.py:186} INFO - Started process (PID=318) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:08:18.267+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:08:18.268+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:08:18.268+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:08:18.282+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:08:18.298+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:08:18.298+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:08:18.320+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:08:18.320+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:08:18.330+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.067 seconds
+[2025-04-06T15:08:48.429+0000] {processor.py:186} INFO - Started process (PID=327) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:08:48.429+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:08:48.431+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:08:48.431+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:08:48.440+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:08:48.452+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:08:48.452+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:08:48.464+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:08:48.464+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:08:48.473+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.048 seconds
+[2025-04-06T15:09:18.556+0000] {processor.py:186} INFO - Started process (PID=335) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:09:18.557+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:09:18.558+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:09:18.558+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:09:18.568+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:09:18.582+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:09:18.581+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:09:18.601+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:09:18.601+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:09:18.611+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.057 seconds
+[2025-04-06T15:09:48.692+0000] {processor.py:186} INFO - Started process (PID=343) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:09:48.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:09:48.693+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:09:48.693+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:09:48.704+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:09:48.716+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:09:48.716+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:09:48.730+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:09:48.730+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:09:48.739+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.051 seconds
+[2025-04-06T15:10:18.834+0000] {processor.py:186} INFO - Started process (PID=351) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:10:18.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:10:18.836+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:10:18.836+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:10:18.845+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:10:18.858+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:10:18.858+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:10:18.872+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:10:18.872+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:10:18.886+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.056 seconds
+[2025-04-06T15:10:49.047+0000] {processor.py:186} INFO - Started process (PID=359) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:10:49.048+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:10:49.050+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:10:49.049+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:10:49.077+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:10:49.098+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:10:49.098+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:10:49.120+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:10:49.120+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:10:49.147+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.104 seconds
+[2025-04-06T15:11:19.258+0000] {processor.py:186} INFO - Started process (PID=367) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:11:19.258+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:11:19.261+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:11:19.261+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:11:19.273+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:11:19.288+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:11:19.288+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:11:19.330+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:11:19.330+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:11:19.349+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.095 seconds
+[2025-04-06T15:11:49.814+0000] {processor.py:186} INFO - Started process (PID=375) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:11:49.814+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:11:49.816+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:11:49.816+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:11:49.824+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:11:49.838+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:11:49.837+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:11:49.851+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:11:49.851+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:11:49.861+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.051 seconds
+[2025-04-06T15:12:19.939+0000] {processor.py:186} INFO - Started process (PID=383) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:12:19.940+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:12:19.941+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:12:19.941+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:12:19.954+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:12:19.971+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:12:19.970+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:12:19.988+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:12:19.987+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:12:20.000+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.064 seconds
+[2025-04-06T15:12:50.091+0000] {processor.py:186} INFO - Started process (PID=391) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:12:50.092+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:12:50.093+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:12:50.093+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:12:50.103+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:12:50.116+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:12:50.116+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:12:50.129+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:12:50.128+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:12:50.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.050 seconds
+[2025-04-06T15:13:20.222+0000] {processor.py:186} INFO - Started process (PID=399) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:13:20.223+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:13:20.224+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:13:20.224+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:13:20.235+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:13:20.248+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:13:20.248+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:13:20.261+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:13:20.261+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:13:20.270+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.052 seconds
+[2025-04-06T15:13:50.384+0000] {processor.py:186} INFO - Started process (PID=408) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:13:50.385+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:13:50.387+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:13:50.386+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:13:50.400+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:13:50.414+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:13:50.414+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:13:50.429+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:13:50.428+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:13:50.439+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.058 seconds
+[2025-04-06T15:14:20.563+0000] {processor.py:186} INFO - Started process (PID=416) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:14:20.563+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:14:20.565+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:14:20.565+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:14:20.575+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:14:20.589+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:14:20.589+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:14:20.603+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:14:20.603+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:14:20.612+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.053 seconds
+[2025-04-06T15:14:50.706+0000] {processor.py:186} INFO - Started process (PID=424) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:14:50.706+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:14:50.708+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:14:50.708+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:14:50.717+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:14:50.730+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:14:50.730+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:14:50.743+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:14:50.743+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:14:50.757+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.054 seconds
+[2025-04-06T15:15:20.855+0000] {processor.py:186} INFO - Started process (PID=432) to work on /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:15:20.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/paxpe_dag.py for tasks to queue
+[2025-04-06T15:15:20.856+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:15:20.856+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:15:20.866+0000] {processor.py:925} INFO - DAG(s) 'paxpe_dag' retrieved from /opt/airflow/dags/paxpe_dag.py
+[2025-04-06T15:15:20.878+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:15:20.878+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-06T15:15:20.895+0000] {logging_mixin.py:190} INFO - [2025-04-06T15:15:20.895+0000] {dag.py:4138} INFO - Setting next_dagrun for paxpe_dag to 2025-04-06T03:00:00+00:00, run_after=2025-04-07T03:00:00+00:00
+[2025-04-06T15:15:20.905+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/paxpe_dag.py took 0.054 seconds
