@@ -1,0 +1,2 @@
+src/airflow-docker/dags/*.pyc
+src/airflow-docker/logs/*
